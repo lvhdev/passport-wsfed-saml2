@@ -10,21 +10,23 @@
     "email": "matias@auth0.com",
     "url": "http://auth0.com/"
   },
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git://github.com/auth0/passport-wsfed-saml2.git"
+    "url": "git://github.com/lvhdev/passport-wsfed-saml2.git"
   },
   "bugs": {
-    "url": "http://github.com/auth0/passport-wsfed-saml2/issues"
+    "url": "http://github.com/lvhdev/passport-wsfed-saml2/issues"
   },
   "main": "./lib/passport-wsfed-saml2",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "ejs": "2.5.5",
     "jsonwebtoken": "~5.0.4",
     "passport-strategy": "^1.0.0",
     "uid2": "0.0.x",
     "valid-url": "^1.0.9",
-    "x509": "^0.3.4",
+    "x509": "github:lvhdev/node-x509#v0.4.0",
     "xml-crypto": "auth0/xml-crypto#v1.4.1-auth0.2",
     "xml-encryption": "auth0/node-xml-encryption#v0.12.0",
     "xml2js": "0.1.x",
@@ -35,18 +37,18 @@
   "devDependencies": {
     "chai": "2.x.x",
     "chai-passport-strategy": "1.x.x",
-    "cheerio": "~0.19.0",
-    "express": "~3.11.0",
-    "mocha": "~1.8.1",
+    "cheerio": "^0.22.0",
+    "express": "~4.17.1",
+    "mocha": "~7.0.1",
     "passport": "^0.3.2",
     "request": "~2.88.0",
-    "saml": "~0.4.4",
-    "samlp": "~0.4.3",
+    "saml": "^0.14.0",
+    "samlp": "~3.4.1",
     "should": "~1.1.0",
-    "wsfed": "~0.3.5"
+    "wsfed": "~4.0.0"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">=8.x.x <=12.x.x"
   },
   "licenses": [
     {
